@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>𝙅𝙎 𝙈𝘼𝙏𝙃 𝙈𝙀𝙏𝙃𝙊𝘿𝙎</title>
+    </head>
+    <body>
+        <h1>JavaScript Operators Demo</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Math Methods for Grade 7</title>
+    </head>
+    <body>
+        <h1>JavaScript Math Methods Demo</h1>
+
+        <div class="card">
+            <h3>Input a number:</h3>
+            <form id="form">
+                <input type="number" class="numinput" id="num" required>
+            </form>
+
+            <h3>Math Methods</h3>
+            <button onclick="showResult('round')">Round</button>
+            <button onclick="showResult('sqrt')">Square Root</button>
+            <button onclick="showResult('abs')">Absolute Value</button>
+            <button onclick="showResult('pow')">Power (x²)</button>
+            <button onclick="showResult('random')">Random (0-1)</button>
+        </div>
+
+        <div id="output">Result:</div>
+
+        <script>
+            function showResult(method) {
+                var x = document.getElementById("num").value;
+                if (x === "") {
+                    alert("Please enter a number.");
+                    return;
+                }
+                x = Number(x);
+                switch (method) {
+                    case 'round':
+                        document.getElementById('output').innerText = `Result: ${Math.round(x)}`;
+                        break;
+                    case 'sqrt':
+                        document.getElementById('output').innerText = `Result: ${Math.sqrt(x)}`;
+                        break;
+                    case 'abs':
+                        document.getElementById('output').innerText = `Result: ${Math.abs(x)}`;
+                        break;
+                    case 'pow':
+                        document.getElementById('output').innerText = `Result: ${Math.pow(x, 2)}`;
+                        break;
+                    case 'random':
+                        document.getElementById('output').innerText = `Result: ${Math.random()}`;
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
